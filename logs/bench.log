@@ -1,0 +1,89 @@
+2023-05-23 13:37:31,660 DEBUG cd frappe-bench && python3 -m venv env
+2023-05-23 13:37:38,340 DEBUG cd frappe-bench && /home/nyasha/Desktop/ERP/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-05-23 13:37:41,809 DEBUG cd frappe-bench && /home/nyasha/Desktop/ERP/frappe-bench/env/bin/python -m pip install --quiet wheel
+2023-05-23 13:37:46,770 LOG Getting frappe
+2023-05-23 13:37:46,770 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-05-23 13:38:01,587 LOG Installing frappe
+2023-05-23 13:38:01,588 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && /home/nyasha/Desktop/ERP/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nyasha/Desktop/ERP/frappe-bench/apps/frappe 
+2023-05-23 13:39:35,177 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench/apps/frappe && yarn install
+2023-05-23 13:40:23,781 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe:
+2023-05-23 13:40:24,089 WARNING cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2023-05-23 13:40:24,090 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-05-23 13:40:24,104 DEBUG cd frappe-bench && bench build
+2023-05-23 13:40:24,677 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench build
+2023-05-23 13:41:02,600 LOG setting up backups
+2023-05-23 13:41:03,126 LOG backups were set up
+2023-05-23 13:41:03,131 INFO Bench frappe-bench initialized
+2023-05-23 13:46:00,251 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench new-site erp
+2023-05-23 13:47:46,843 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench get-app payments
+2023-05-23 13:47:47,599 LOG Getting payments
+2023-05-23 13:47:47,599 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2023-05-23 13:47:49,266 LOG Installing payments
+2023-05-23 13:47:49,527 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && /home/nyasha/Desktop/ERP/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nyasha/Desktop/ERP/frappe-bench/apps/payments 
+2023-05-23 13:47:56,236 DEBUG bench build --app payments
+2023-05-23 13:47:56,840 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench build --app payments
+2023-05-23 13:48:03,334 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe:
+2023-05-23 13:48:03,667 WARNING cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2023-05-23 13:48:03,667 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-05-23 13:48:42,702 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench get-app --branch version-14 erpnext
+2023-05-23 13:48:43,263 LOG Getting erpnext
+2023-05-23 13:48:43,264 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2023-05-23 13:48:53,773 LOG Installing erpnext
+2023-05-23 13:48:53,954 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && /home/nyasha/Desktop/ERP/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nyasha/Desktop/ERP/frappe-bench/apps/erpnext 
+2023-05-23 13:49:04,311 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench/apps/erpnext && yarn install
+2023-05-23 13:49:06,272 DEBUG bench build --app erpnext
+2023-05-23 13:49:06,437 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench build --app erpnext
+2023-05-23 13:49:19,428 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe:
+2023-05-23 13:49:19,769 WARNING cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2023-05-23 13:49:19,770 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-05-23 13:49:45,707 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench get-app hrms
+2023-05-23 13:49:47,050 LOG Getting hrms
+2023-05-23 13:49:47,050 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2023-05-23 13:49:54,270 LOG Installing hrms
+2023-05-23 13:49:54,529 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && /home/nyasha/Desktop/ERP/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/nyasha/Desktop/ERP/frappe-bench/apps/hrms 
+2023-05-23 13:49:58,429 DEBUG bench build --app hrms
+2023-05-23 13:49:58,590 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench build --app hrms
+2023-05-23 13:50:03,860 DEBUG cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe:
+2023-05-23 13:50:04,166 WARNING cd /home/nyasha/Desktop/ERP/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2023-05-23 13:50:04,166 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-05-23 13:50:37,837 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench --site erp install-app erpnext
+2023-05-23 13:52:51,089 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench --site erp install-app hrms
+2023-05-23 13:55:58,941 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-23 13:56:34,679 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-23 13:57:00,124 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-23 13:57:00,632 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench serve --port 8000
+2023-05-23 13:57:00,764 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench worker
+2023-05-23 13:57:00,808 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
+2023-05-23 13:57:00,874 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
+2023-05-23 14:03:02,957 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-23 14:03:03,759 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench worker
+2023-05-23 14:03:03,801 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench serve --port 8000
+2023-05-23 14:03:03,815 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
+2023-05-23 14:03:04,014 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
+2023-05-24 10:18:26,401 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-24 10:18:26,888 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
+2023-05-24 10:18:26,969 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
+2023-05-24 10:18:27,215 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench serve --port 8000
+2023-05-24 10:18:27,296 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench worker
+2023-05-24 11:52:15,540 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-24 11:52:17,962 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench serve --port 8000
+2023-05-24 11:52:18,293 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
+2023-05-24 11:52:18,407 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
+2023-05-24 11:52:18,552 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench worker
+2023-05-24 12:00:02,593 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench --verbose --site all backup
+2023-05-24 12:05:14,967 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-24 12:05:16,030 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
+2023-05-24 12:05:16,236 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
+2023-05-24 12:05:16,245 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench worker
+2023-05-24 12:05:16,396 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench serve --port 8000
+2023-05-25 09:26:15,563 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-25 09:26:16,195 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
+2023-05-25 09:26:16,329 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench worker
+2023-05-25 09:26:16,435 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
+2023-05-25 09:26:16,627 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench serve --port 8000
+2023-05-25 09:26:47,191 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench start
+2023-05-25 09:26:48,043 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench serve --port 8000
+2023-05-25 09:26:48,047 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench worker
+2023-05-25 09:26:48,061 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
+2023-05-25 09:26:48,065 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
+2023-05-25 12:00:02,369 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench --verbose --site all backup
