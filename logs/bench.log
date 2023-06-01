@@ -87,3 +87,4 @@
 2023-05-25 09:26:48,061 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench schedule
 2023-05-25 09:26:48,065 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench watch
 2023-05-25 12:00:02,369 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench --verbose --site all backup
+2023-05-31 12:00:01,760 INFO /home/nyasha/Desktop/ERP/path/to/venv/bin/bench --verbose --site all backup

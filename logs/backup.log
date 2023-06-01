@@ -10,3 +10,9 @@ Backup Summary for erp at 2023-05-25 12:00:12.626833
 Config  : ./erp/private/backups/20230525_120007-erp-site_config_backup.json 158.0B
 Database: ./erp/private/backups/20230525_120007-erp-database.sql.gz         1.2MiB
 Backup for Site erp has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _d977f9e83b47ebeb -p********** _d977f9e83b47ebeb -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp/private/backups/20230531_120009-erp-database.sql.gz
+
+Backup Summary for erp at 2023-05-31 12:00:16.737450
+Config  : ./erp/private/backups/20230531_120009-erp-site_config_backup.json 158.0B
+Database: ./erp/private/backups/20230531_120009-erp-database.sql.gz         1.2MiB
+Backup for Site erp has been successfully completed
